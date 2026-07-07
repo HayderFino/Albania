@@ -1,0 +1,199 @@
+/* ==========================================================================
+   Design Tokens — Albania, Santander
+   Color palette inspired by the Andean mountains, coffee plantations,
+   and warm earth tones of Santander's countryside.
+   ========================================================================== */
+
+:root {
+  /* ── Primary Palette ────────────────────────────────────────────────── */
+  --color-primary: #2D6A4F;          /* Deep forest green */
+  --color-primary-light: #40916C;    /* Medium green */
+  --color-primary-dark: #1B4332;     /* Dark emerald */
+  --color-primary-rgb: 45, 106, 79;
+
+  /* ── Secondary Palette ──────────────────────────────────────────────── */
+  --color-secondary: #B07D2B;        /* Warm gold / coffee */
+  --color-secondary-light: #D4A853;  /* Light gold */
+  --color-secondary-dark: #8B5E1A;   /* Dark amber */
+  --color-secondary-rgb: 176, 125, 43;
+
+  /* ── Accent ─────────────────────────────────────────────────────────── */
+  --color-accent: #C75B39;           /* Terracotta */
+  --color-accent-light: #E07B5A;
+  --color-accent-dark: #A04429;
+  --color-accent-rgb: 199, 91, 57;
+
+  /* ── Neutrals ───────────────────────────────────────────────────────── */
+  --color-white: #FFFFFF;
+  --color-black: #0A0A0A;
+  --color-gray-50: #FAFAF9;
+  --color-gray-100: #F5F5F4;
+  --color-gray-200: #E7E5E4;
+  --color-gray-300: #D6D3D1;
+  --color-gray-400: #A8A29E;
+  --color-gray-500: #78716C;
+  --color-gray-600: #57534E;
+  --color-gray-700: #44403C;
+  --color-gray-800: #292524;
+  --color-gray-900: #1C1917;
+
+  /* ── Semantic ───────────────────────────────────────────────────────── */
+  --color-success: #22C55E;
+  --color-warning: #F59E0B;
+  --color-error: #EF4444;
+  --color-info: #3B82F6;
+
+  /* ── Light Mode Surfaces ────────────────────────────────────────────── */
+  --bg-primary: #FAFAF9;
+  --bg-secondary: #F5F5F4;
+  --bg-tertiary: #FFFFFF;
+  --bg-elevated: rgba(255, 255, 255, 0.8);
+  --text-primary: #1C1917;
+  --text-secondary: #57534E;
+  --text-tertiary: #78716C;
+  --text-inverse: #FAFAF9;
+  --border-color: rgba(0, 0, 0, 0.08);
+  --border-color-strong: rgba(0, 0, 0, 0.15);
+
+  /* ── Typography ─────────────────────────────────────────────────────── */
+  --font-heading: 'Outfit', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+
+  --text-xs: clamp(0.7rem, 0.65rem + 0.25vw, 0.75rem);
+  --text-sm: clamp(0.8rem, 0.75rem + 0.25vw, 0.875rem);
+  --text-base: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+  --text-lg: clamp(1rem, 0.95rem + 0.25vw, 1.125rem);
+  --text-xl: clamp(1.1rem, 1rem + 0.5vw, 1.25rem);
+  --text-2xl: clamp(1.3rem, 1.1rem + 1vw, 1.5rem);
+  --text-3xl: clamp(1.6rem, 1.3rem + 1.5vw, 1.875rem);
+  --text-4xl: clamp(2rem, 1.5rem + 2.5vw, 2.25rem);
+  --text-5xl: clamp(2.5rem, 1.8rem + 3.5vw, 3rem);
+  --text-6xl: clamp(3rem, 2rem + 5vw, 3.75rem);
+  --text-7xl: clamp(3.5rem, 2.2rem + 6.5vw, 4.5rem);
+  --text-hero: clamp(3.5rem, 2rem + 8vw, 7rem);
+
+  --leading-tight: 1.15;
+  --leading-snug: 1.3;
+  --leading-normal: 1.6;
+  --leading-relaxed: 1.75;
+
+  --tracking-tight: -0.02em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.025em;
+  --tracking-wider: 0.05em;
+  --tracking-widest: 0.1em;
+
+  /* ── Spacing ────────────────────────────────────────────────────────── */
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --space-12: 3rem;
+  --space-16: 4rem;
+  --space-20: 5rem;
+  --space-24: 6rem;
+  --space-32: 8rem;
+
+  --section-padding: clamp(4rem, 8vw, 8rem);
+  --container-max: 1280px;
+  --container-narrow: 900px;
+  --container-wide: 1440px;
+  --container-padding: clamp(1.25rem, 4vw, 2.5rem);
+
+  /* ── Borders & Radius ───────────────────────────────────────────────── */
+  --radius-sm: 0.375rem;
+  --radius-md: 0.625rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+  --radius-2xl: 2rem;
+  --radius-full: 9999px;
+
+  /* ── Shadows ────────────────────────────────────────────────────────── */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.04);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.06);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.08);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.1);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.12);
+  --shadow-2xl: 0 24px 64px rgba(0, 0, 0, 0.16);
+  --shadow-glow: 0 0 40px rgba(var(--color-primary-rgb), 0.15);
+
+  /* ── Glassmorphism ──────────────────────────────────────────────────── */
+  --glass-bg: rgba(255, 255, 255, 0.65);
+  --glass-bg-strong: rgba(255, 255, 255, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-blur: blur(20px);
+  --glass-blur-strong: blur(40px);
+
+  /* ── Transitions ────────────────────────────────────────────────────── */
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+  --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --duration-slower: 800ms;
+
+  /* ── Z-Index ────────────────────────────────────────────────────────── */
+  --z-base: 1;
+  --z-dropdown: 100;
+  --z-sticky: 200;
+  --z-overlay: 300;
+  --z-modal: 400;
+  --z-toast: 500;
+  --z-cursor: 600;
+  --z-loader: 9999;
+
+  /* ── Navbar ─────────────────────────────────────────────────────────── */
+  --navbar-height: 4.5rem;
+  --navbar-bg: rgba(250, 250, 249, 0.8);
+  --navbar-bg-scrolled: rgba(250, 250, 249, 0.95);
+
+  /* ── Gradients ──────────────────────────────────────────────────────── */
+  --gradient-primary: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-light) 100%);
+  --gradient-warm: linear-gradient(135deg, var(--color-secondary) 0%, var(--color-accent) 100%);
+  --gradient-hero: linear-gradient(180deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,0.1) 40%, rgba(0,0,0,0.5) 100%);
+  --gradient-section: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(var(--color-primary-rgb), 0.03) 0%, rgba(var(--color-secondary-rgb), 0.03) 100%);
+}
+
+/* ==========================================================================
+   Dark Mode
+   ========================================================================== */
+
+[data-theme="dark"] {
+  --bg-primary: #0F1210;
+  --bg-secondary: #161B18;
+  --bg-tertiary: #1D2420;
+  --bg-elevated: rgba(22, 27, 24, 0.8);
+  --text-primary: #E7E5E4;
+  --text-secondary: #A8A29E;
+  --text-tertiary: #78716C;
+  --text-inverse: #1C1917;
+  --border-color: rgba(255, 255, 255, 0.08);
+  --border-color-strong: rgba(255, 255, 255, 0.15);
+
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.2);
+  --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.3);
+  --shadow-md: 0 4px 16px rgba(0, 0, 0, 0.35);
+  --shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.4);
+  --shadow-xl: 0 16px 48px rgba(0, 0, 0, 0.45);
+  --shadow-2xl: 0 24px 64px rgba(0, 0, 0, 0.5);
+  --shadow-glow: 0 0 40px rgba(var(--color-primary-rgb), 0.25);
+
+  --glass-bg: rgba(22, 27, 24, 0.65);
+  --glass-bg-strong: rgba(22, 27, 24, 0.85);
+  --glass-border: rgba(255, 255, 255, 0.08);
+
+  --navbar-bg: rgba(15, 18, 16, 0.8);
+  --navbar-bg-scrolled: rgba(15, 18, 16, 0.95);
+
+  --gradient-hero: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.2) 40%, rgba(0,0,0,0.7) 100%);
+  --gradient-section: linear-gradient(180deg, var(--bg-primary) 0%, var(--bg-secondary) 100%);
+  --gradient-card: linear-gradient(145deg, rgba(var(--color-primary-rgb), 0.06) 0%, rgba(var(--color-secondary-rgb), 0.06) 100%);
+}

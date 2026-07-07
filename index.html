@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Descubre Albania, Santander. Un municipio lleno de historia, cultura, paisajes cafeteros y tradición campesina en la provincia de Vélez.">
+    <meta name="keywords" content="Albania Santander, turismo Santander, provincia de Vélez, cultura campesina, café Santander, historia Albania, viajes Colombia">
+    <meta name="author" content="Alcaldía Municipal de Albania">
+    <title>Albania, Santander — Naturaleza, Cultura y Tradición</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Albania, Santander — Naturaleza y Tradición">
+    <meta property="og:description" content="Descubre un municipio lleno de historia, paisajes cafeteros y tradición campesina en la provincia de Vélez.">
+    <meta property="og:image" content="assets/images/hero.png">
+    
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>⛰️</text></svg>">
+</head>
+<body>
+    <!-- Skip to content for accessibility -->
+    <a href="#main-content" class="skip-to-content">Saltar al contenido principal</a>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="customCursor"></div>
+
+    <!-- Scroll Progress -->
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <!-- Page Loader -->
+    <div class="loader" id="pageLoader">
+        <div class="loader__spinner">
+            <div class="loader__circle"></div>
+        </div>
+        <div class="loader__text">Cargando Albania</div>
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar__inner">
+            <a href="#" class="navbar__logo">
+                <div class="navbar__logo-icon">⛰️</div>
+                <span>Albania</span>
+            </a>
+            
+            <div class="navbar__menu">
+                <a href="#inicio" class="navbar__link">Inicio</a>
+                <a href="#historia" class="navbar__link">Historia</a>
+                <a href="#turismo" class="navbar__link">Turismo</a>
+                <a href="#cultura" class="navbar__link">Cultura</a>
+                <a href="#gastronomia" class="navbar__link">Gastronomía</a>
+                <a href="#contacto" class="navbar__link">Contacto</a>
+            </div>
+
+            <div class="navbar__actions">
+                <button class="navbar__theme-toggle" id="themeToggle" aria-label="Cambiar tema">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="navbar__hamburger" id="mobileMenuBtn" aria-label="Menú">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div class="navbar__mobile-menu" id="mobileMenu">
+        <a href="#inicio" class="navbar__mobile-link">Inicio</a>
+        <a href="#historia" class="navbar__mobile-link">Historia</a>
+        <a href="#turismo" class="navbar__mobile-link">Turismo</a>
+        <a href="#cultura" class="navbar__mobile-link">Cultura</a>
+        <a href="#gastronomia" class="navbar__mobile-link">Gastronomía</a>
+        <a href="#contacto" class="navbar__mobile-link">Contacto</a>
+    </div>
+
+    <main id="main-content">
+        <!-- Section 1: Hero -->
+        <section id="inicio" class="hero">
+            <div class="hero__bg">
+                <img src="assets/images/hero.png" alt="Paisaje de Albania" class="hero__bg-image" id="heroImage">
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="hero__content">
+                <div class="hero__label">
+                    <div class="hero__label-dot"></div>
+                    Provincia de Vélez, Santander
+                </div>
+                <h1 class="hero__title">Descubre el Corazón de <span class="hero__title-accent">Albania</span></h1>
+                <p class="hero__description">Un refugio de naturaleza, paz y tradición campesina enclavado en las montañas de la Cordillera Oriental colombiana.</p>
+                <div class="hero__actions">
+                    <a href="#historia" class="btn btn--primary btn--lg">Conocer más</a>
+                    <a href="#turismo" class="btn btn--glass btn--lg">Explorar destinos</a>
+                </div>
+            </div>
+            <div class="hero__scroll-indicator">
+                <span>Descubrir</span>
+                <div class="hero__scroll-dot"></div>
+            </div>
+        </section>
+
+        <!-- Section 2: Intro/Stats -->
+        <section class="section">
+            <div class="container">
+                <div class="intro__grid">
+                    <div class="intro__content reveal reveal--left">
+                        <div class="section-label">Bienvenido a Albania</div>
+                        <h2 class="section-title">Tierra de gente laboriosa y paisajes inolvidables</h2>
+                        <p class="intro__text">Fundado oficialmente en 1919 por el Presbítero Rosendo Vargas, Albania es hoy un remanso de paz que conserva intacta la esencia del campesino santandereano. Sus montañas cafeteras y valles frutícolas son el orgullo de su gente.</p>
+                        
+                        <div class="intro__stats">
+                            <div class="intro__stat">
+                                <div class="intro__stat-value counter" data-target="1650">0</div>
+                                <div class="intro__stat-label">Metros de altitud</div>
+                            </div>
+                            <div class="intro__stat">
+                                <div class="intro__stat-value counter" data-target="18">0</div>
+                                <div class="intro__stat-label">Grados centígrados</div>
+                            </div>
+                            <div class="intro__stat">
+                                <div class="intro__stat-value counter" data-target="29">0</div>
+                                <div class="intro__stat-label">Veredas rurales</div>
+                            </div>
+                            <div class="intro__stat">
+                                <div class="intro__stat-value">1919</div>
+                                <div class="intro__stat-label">Año de fundación</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="intro__image-container reveal reveal--right">
+                        <div class="intro__image-decoration"></div>
+                        <img src="assets/images/hero-2.png" alt="Paisaje cafetero" class="intro__image">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 3: Historia -->
+        <section id="historia" class="section section--alt">
+            <div class="container">
+                <div class="section-header reveal reveal--fade">
+                    <div class="section-label">Nuestras Raíces</div>
+                    <h2 class="section-title">Historia Forjada en las Montañas</h2>
+                    <p class="section-subtitle">Desde un humilde paso de arrieros hasta convertirse en un municipio próspero de la provincia de Vélez.</p>
+                </div>
+                
+                <div class="historia__content reveal reveal--fade">
+                    <p class="historia__text">El territorio que hoy comprende Albania fue originalmente una zona de tránsito para arrieros y comerciantes que recorrían las montañas de Santander. El caserío de Pueblo Viejo fue el primer asentamiento reconocido oficialmente, cuando mediante la Ordenanza Departamental 46 del 12 de julio de 1904, se creó el municipio con Pueblo Viejo como cabecera.</p>
+                    
+                    <div class="historia__highlight">
+                        <p>"Fue el Presbítero Rosendo Vargas quien, desde 1914, transformó la historia del municipio al impulsar el poblamiento de la Mesa de Chevre, construyendo una escuela y la capilla de Nuestra Señora del Carmen, sentando las bases de lo que sería la nueva cabecera municipal."</p>
+                    </div>
+                    
+                    <p class="historia__text">El 19 de agosto de 1919 se consolida definitivamente como municipio. Desde entonces, el pueblo ha crecido en torno a su vocación agrícola, la calidez de su gente y el amor por sus tradiciones campesinas.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 4: Tourism -->
+        <section id="turismo" class="section">
+            <div class="container">
+                <div class="section-header reveal reveal--fade">
+                    <div class="section-label">Explora</div>
+                    <h2 class="section-title">Atractivos Turísticos</h2>
+                    <p class="section-subtitle">Lugares únicos que reflejan la belleza natural y el patrimonio arquitectónico de nuestra región.</p>
+                </div>
+
+                <div class="tourism__grid">
+                    <!-- Card 1 -->
+                    <article class="tourism__card reveal reveal--scale reveal-delay-1">
+                        <div class="tourism__card-image-wrapper">
+                            <div class="tourism__card-badge">Paisaje</div>
+                            <img src="assets/images/hero.png" alt="Mirador de Albania" class="tourism__card-image">
+                        </div>
+                        <div class="tourism__card-body">
+                            <h3 class="tourism__card-title">Mirador de Albania</h3>
+                            <p class="tourism__card-text">Un punto estratégico que ofrece vistas panorámicas de los valles y montañas circundantes. Ideal para la contemplación y la fotografía.</p>
+                        </div>
+                    </article>
+                    
+                    <!-- Card 2 -->
+                    <article class="tourism__card reveal reveal--scale reveal-delay-2">
+                        <div class="tourism__card-image-wrapper">
+                            <div class="tourism__card-badge">Patrimonio</div>
+                            <img src="assets/images/cultura.png" alt="Templo Parroquial San Roque" class="tourism__card-image">
+                        </div>
+                        <div class="tourism__card-body">
+                            <h3 class="tourism__card-title">Templo Parroquial San Roque</h3>
+                            <p class="tourism__card-text">Joya arquitectónica del municipio, centro espiritual de la comunidad y reflejo de la devoción de generaciones de albaneses.</p>
+                        </div>
+                    </article>
+
+                    <!-- Card 3 -->
+                    <article class="tourism__card reveal reveal--scale reveal-delay-3">
+                        <div class="tourism__card-image-wrapper">
+                            <div class="tourism__card-badge">Naturaleza</div>
+                            <img src="assets/images/hero-2.png" alt="Balneario Río Lenguazaque" class="tourism__card-image">
+                        </div>
+                        <div class="tourism__card-body">
+                            <h3 class="tourism__card-title">Río Lenguazaque</h3>
+                            <p class="tourism__card-text">Un balneario natural de aguas cristalinas rodeado de vegetación exuberante. Lugar favorito para disfrutar del clima templado.</p>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section 5: Gastronomy -->
+        <section id="gastronomia" class="section section--alt">
+            <div class="container">
+                <div class="section-header reveal reveal--fade">
+                    <div class="section-label">Sabores</div>
+                    <h2 class="section-title">Nuestra Gastronomía</h2>
+                    <p class="section-subtitle">Delicias culinarias que representan la sazón única de Santander y la riqueza de nuestros campos.</p>
+                </div>
+
+                <div class="gastro__grid">
+                    <div class="gastro__card reveal reveal--scale reveal-delay-1">
+                        <div class="gastro__card-image-wrapper">
+                            <img src="assets/images/gastronomia.png" alt="Mute Santandereano" class="gastro__card-image">
+                        </div>
+                        <div class="gastro__card-body">
+                            <h3 class="gastro__card-title">🍲 Mute Santandereano</h3>
+                            <p class="gastro__card-text">Sopa espesa y tradicional preparada con maíz, frijoles, garbanzos, carne y hierbas aromáticas. El plato insignia de la región.</p>
+                        </div>
+                    </div>
+
+                    <div class="gastro__card reveal reveal--scale reveal-delay-2">
+                        <div class="gastro__card-image-wrapper">
+                            <img src="assets/images/gastronomia.png" alt="Cabrito" class="gastro__card-image">
+                        </div>
+                        <div class="gastro__card-body">
+                            <h3 class="gastro__card-title">🐐 Cabrito al Horno</h3>
+                            <p class="gastro__card-text">Preparado a la brasa o al horno, sazonado con especias locales y acompañado con yuca y arepa santandereana.</p>
+                        </div>
+                    </div>
+
+                    <div class="gastro__card reveal reveal--scale reveal-delay-3">
+                        <div class="gastro__card-image-wrapper">
+                            <img src="assets/images/gastronomia.png" alt="Hormigas Culonas" class="gastro__card-image">
+                        </div>
+                        <div class="gastro__card-body">
+                            <h3 class="gastro__card-title">🐜 Hormigas Culonas</h3>
+                            <p class="gastro__card-text">Manjar exótico que distingue a Santander. Tostadas con sal, son un snack crujiente rico en proteínas.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Quick Call to Action to ensure we have content immediately visible -->
+        <section id="contacto" class="section">
+            <div class="container">
+                <div class="section-header reveal reveal--fade">
+                    <div class="section-label">Visítanos</div>
+                    <h2 class="section-title">¡Te esperamos en Albania!</h2>
+                </div>
+                <div style="text-align: center;" class="reveal reveal--fade">
+                    <p style="margin-bottom: 2rem;">Contáctanos para más información turística y planes de visita.</p>
+                    <a href="mailto:contactenos@albania-santander.gov.co" class="btn btn--primary btn--lg">Contactar a la Alcaldía</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__grid">
+                <div class="footer__brand">
+                    <div class="footer__logo">
+                        <span>⛰️</span> Albania
+                    </div>
+                    <p class="footer__description">Un municipio de paz, progreso y tradición en la hermosa provincia de Vélez, departamento de Santander, Colombia.</p>
+                </div>
+                <div>
+                    <h4 class="footer__column-title">Secciones</h4>
+                    <a href="#inicio" class="footer__link">Inicio</a>
+                    <a href="#historia" class="footer__link">Historia</a>
+                    <a href="#turismo" class="footer__link">Turismo</a>
+                    <a href="#cultura" class="footer__link">Cultura</a>
+                </div>
+                <div>
+                    <h4 class="footer__column-title">Enlaces Oficiales</h4>
+                    <a href="https://albania-santander.gov.co" target="_blank" rel="noopener noreferrer" class="footer__link">Sitio Web Oficial</a>
+                    <a href="#" class="footer__link">Transparencia</a>
+                    <a href="#" class="footer__link">Peticiones y Reclamos</a>
+                </div>
+                <div>
+                    <h4 class="footer__column-title">Contacto</h4>
+                    <p class="footer__link">📍 Alcaldía Municipal, Albania</p>
+                    <p class="footer__link">📞 320 8535118</p>
+                    <p class="footer__link">✉️ contactenos@albania-santander.gov.co</p>
+                </div>
+            </div>
+            <div class="footer__bottom">
+                <p>&copy; 2026 Albania, Santander. Todos los derechos reservados.</p>
+                <p>Desarrollado con ♥️ para Santander</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to top button -->
+    <button class="back-to-top" id="backToTop" aria-label="Volver arriba">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="18 15 12 9 6 15"></polyline>
+        </svg>
+    </button>
+
+    <!-- Basic App Initialization script to make it interactive instantly -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Remove Loader
+            setTimeout(() => {
+                document.getElementById('pageLoader').classList.add('hidden');
+            }, 1000);
+
+            // Theme Toggle
+            const themeToggle = document.getElementById('themeToggle');
+            themeToggle.addEventListener('click', () => {
+                const currentTheme = document.documentElement.getAttribute('data-theme');
+                const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+                document.documentElement.setAttribute('data-theme', newTheme);
+            });
+
+            // Mobile Menu
+            const mobileBtn = document.getElementById('mobileMenuBtn');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const mobileLinks = document.querySelectorAll('.navbar__mobile-link');
+            
+            mobileBtn.addEventListener('click', () => {
+                mobileBtn.classList.toggle('open');
+                mobileMenu.classList.toggle('open');
+                document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
+            });
+
+            mobileLinks.forEach(link => {
+                link.addEventListener('click', () => {
+                    mobileBtn.classList.remove('open');
+                    mobileMenu.classList.remove('open');
+                    document.body.style.overflow = '';
+                });
+            });
+
+            // Scroll Reveal Animation Basic Setup
+            const revealElements = document.querySelectorAll('.reveal');
+            
+            const revealOptions = {
+                threshold: 0.1,
+                rootMargin: "0px 0px -50px 0px"
+            };
+
+            const revealOnScroll = new IntersectionObserver(function(entries, observer) {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, revealOptions);
+
+            revealElements.forEach(el => revealOnScroll.observe(el));
+
+            // Counters Basic Setup
+            const counters = document.querySelectorAll('.counter');
+            const counterObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if(entry.isIntersecting) {
+                        const target = +entry.target.getAttribute('data-target');
+                        const duration = 2000;
+                        const step = target / (duration / 16);
+                        let current = 0;
+                        const updateCounter = () => {
+                            current += step;
+                            if(current < target) {
+                                entry.target.innerText = Math.ceil(current);
+                                requestAnimationFrame(updateCounter);
+                            } else {
+                                entry.target.innerText = target;
+                            }
+                        };
+                        updateCounter();
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            counters.forEach(c => counterObserver.observe(c));
+        });
+    </script>
+</body>
+</html>

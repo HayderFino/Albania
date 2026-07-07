@@ -1,0 +1,265 @@
+/* ==========================================================================
+   Responsive Design — Media Queries
+   ========================================================================== */
+
+/* ── 4K / Ultra-wide (2560px+) ────────────────────────────────────────── */
+@media (min-width: 2560px) {
+  :root {
+    --container-max: 1600px;
+    --container-wide: 1800px;
+  }
+}
+
+/* ── Large Desktop (1440px+) ──────────────────────────────────────────── */
+@media (min-width: 1440px) {
+  .gallery__grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+/* ── Desktop (1024px - 1279px) ────────────────────────────────────────── */
+@media (max-width: 1279px) {
+  .footer__grid {
+    grid-template-columns: 2fr 1fr 1fr;
+  }
+
+  .footer__grid > :last-child {
+    grid-column: 1 / -1;
+  }
+}
+
+/* ── Tablet (768px - 1023px) ──────────────────────────────────────────── */
+@media (max-width: 1023px) {
+  /* Navbar */
+  .navbar__menu {
+    display: none;
+  }
+
+  .navbar__hamburger {
+    display: flex;
+  }
+
+  /* Sections */
+  .intro__grid,
+  .geography__grid,
+  .culture__grid,
+  .contact__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  .intro__content {
+    max-width: none;
+  }
+
+  .intro__image-container {
+    order: -1;
+  }
+
+  /* Timeline */
+  .timeline::before {
+    left: 0;
+  }
+
+  .timeline__item {
+    grid-template-columns: auto 1fr;
+    gap: var(--space-4);
+  }
+
+  .timeline__year {
+    position: absolute;
+    top: 0;
+    left: 2rem;
+    text-align: left;
+    font-size: var(--text-lg);
+  }
+
+  .timeline__content {
+    padding-left: var(--space-3);
+    padding-top: var(--space-8);
+  }
+
+  /* Footer */
+  .footer__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .footer__brand {
+    grid-column: 1 / -1;
+    max-width: none;
+  }
+
+  .footer__bottom {
+    flex-direction: column;
+    gap: var(--space-4);
+    text-align: center;
+  }
+}
+
+/* ── Mobile Large (640px - 767px) ─────────────────────────────────────── */
+@media (max-width: 767px) {
+  .hero__title {
+    font-size: clamp(2.5rem, 8vw, 4rem);
+  }
+
+  .hero__description {
+    font-size: var(--text-base);
+  }
+
+  .hero__actions {
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .hero__actions .btn {
+    width: 100%;
+  }
+
+  .section-title {
+    font-size: var(--text-4xl);
+  }
+
+  .intro__stats {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stats__chart {
+    height: 180px;
+    gap: var(--space-3);
+  }
+
+  .tourism__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .events__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-3);
+  }
+
+  .footer__grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-8);
+  }
+
+  #map {
+    height: 350px;
+  }
+
+  .personajes__card {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+  }
+
+  .back-to-top {
+    right: var(--space-4);
+    bottom: var(--space-4);
+  }
+}
+
+/* ── Mobile Small (< 480px) ───────────────────────────────────────────── */
+@media (max-width: 479px) {
+  .hero__label {
+    font-size: 0.65rem;
+  }
+
+  .section-label {
+    font-size: var(--text-xs);
+  }
+
+  .section-label::before,
+  .section-label::after {
+    width: 1rem;
+  }
+
+  .intro__stats {
+    grid-template-columns: 1fr;
+  }
+
+  .stats__grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .stats__number {
+    font-size: var(--text-4xl);
+  }
+
+  .gallery__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .gallery__filters {
+    gap: var(--space-1);
+  }
+
+  .gallery__filter {
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--text-xs);
+  }
+
+  .economy__grid,
+  .gastro__grid,
+  .facts__grid,
+  .education__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .map__legend {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .navbar__logo span {
+    display: none;
+  }
+}
+
+/* ── Landscape orientation on small screens ───────────────────────────── */
+@media (max-height: 500px) and (orientation: landscape) {
+  .hero {
+    min-height: auto;
+    padding: var(--space-16) 0;
+  }
+
+  .hero__scroll-indicator {
+    display: none;
+  }
+}
+
+/* ── Print ────────────────────────────────────────────────────────────── */
+@media print {
+  .navbar,
+  .back-to-top,
+  .scroll-progress,
+  .custom-cursor,
+  .loader,
+  .hero__scroll-indicator {
+    display: none !important;
+  }
+
+  .hero {
+    min-height: auto;
+    padding: 2rem 0;
+  }
+
+  .section {
+    padding: 2rem 0;
+    page-break-inside: avoid;
+  }
+
+  body {
+    color: #000;
+    background: #fff;
+  }
+}
